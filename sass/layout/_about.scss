@@ -1,4 +1,8 @@
 .about {
+    display: none;
+    @include desktop{
+        display: block;
+    }
     padding-bottom: 94px;
     &__list {
         display: flex;
