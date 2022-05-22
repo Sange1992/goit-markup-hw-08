@@ -2,11 +2,9 @@
     padding: 60px 0;
     @include desktop{
         padding: 94px 0;
-
     }
     &__list {
         margin-bottom: -30px;  
-      
         @include tablet{
             display: flex;
             flex-wrap: wrap;
