@@ -2,15 +2,21 @@
     border-bottom: 1px solid #ECECEC;
 }
 .portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
     &__buttons {
         display: flex;
-        justify-content: center;
-        margin-bottom: 50px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        // justify-content: center;
+        margin-right: -9px;
+        margin-bottom: -9px;
     }
-    &__item:not(:last-child) {
+    &__item {
         margin-right: 9px;
+        margin-bottom: 9px;
     }
     &__btn {
         font-family: inherit;
@@ -32,13 +38,23 @@
     }
 }
 .example{
+    margin-top: 40px;
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin-bottom: -30px;
     }
+
+
+
+
+
+
     &__item {
+        max-width: 450px;
         margin-bottom: 30px;
+        // margin-right: 30px;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__cover-wrap {
@@ -68,9 +84,7 @@
             1px 4px 6px rgba(0, 0, 0, 0.16);
         transform: translateY(0);
     }
-    &__item:not(:nth-child(3n)) {
-        margin-right: 30px;
-    }
+  
     &__about {
         padding: 20px 0 20px 24px;
         border: solid 1px #EEEEEE;

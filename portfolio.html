@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
     <body>
-        <header class="header portfolio--border">
+        <!-- <header class="header portfolio--border">
             <div class="container">
                 <a href="./index.html" class="logo link">Web<span class="header-logo">Studio</span></a>
                 <nav class="nav">
@@ -41,7 +41,7 @@
                     </ul>
                 </div>
             </div>
-        </header>
+        </header> -->
         <main>
         <section class="portfolio">
             <div class="container">
@@ -56,7 +56,32 @@
                     <ul class="example__list list">
                         <li class="example__item">
                             <div class="example__cover-wrap">
-                            <img src="images/rabota1.jpg" alt="Фото пример работы" width="370">
+                            <picture>
+                                <source
+                                srcset="
+                                ./images/portfolio/des1-1x.jpg 1x,
+                                ./images/portfolio/des1-2x.jpg 2x
+                                " 
+                                media="(min-width: 1200px)"
+                                />
+                                <source
+                                srcset="
+                                ./images/portfolio/tab1-1x.jpg 1x,
+                                ./images/portfolio/tab1-2x.jpg 2x
+                                " 
+                                media="(min-width: 768px)"
+                                />
+                                <source
+                                srcset="
+                                ./images/portfolio/mob1-1x.jpg 1x,
+                                ./images/portfolio/mob1-2x.jpg 2x
+                                " 
+                                media="(min-width: 320px)"
+                                />
+                                <img src="images/portfolio/des1-1x.jpg"
+                                    alt="Фото пример работы" 
+                                    class="img">
+                            </picture>
                             <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="example__about">
@@ -66,8 +91,33 @@
                         </li>
                         <li class="example__item">
                             <div class="example__cover-wrap">
-                            <img src="images/rabota2.jpg" alt="Фото пример работы" width="370">
-                            <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/des2-1x.jpg 1x,
+                                    ./images/portfolio/des2-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/tab2-1x.jpg 1x,
+                                    ./images/portfolio/tab2-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/mob2-1x.jpg 1x,
+                                    ./images/portfolio/mob2-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 320px)"
+                                    />
+                                    <img src="images/portfolio/des2-1x.jpg"
+                                        alt="Фото пример работы" 
+                                        class="img">
+                                </picture>
+                                <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="example__about">
                                 <h3 class="example__title">Постер New Orlean vs Golden Sta</h3>
@@ -76,8 +126,33 @@
                         </li>
                         <li class="example__item">
                             <div class="example__cover-wrap">
-                            <img src="images/rabota3.jpg" alt="Фото пример работы" width="370">
-                            <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/des3-1x.jpg 1x,
+                                    ./images/portfolio/des3-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/tab3-1x.jpg 1x,
+                                    ./images/portfolio/tab3-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/mob3-1x.jpg 1x,
+                                    ./images/portfolio/mob3-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 320px)"
+                                    />
+                                    <img src="images/portfolio/des3-1x.jpg"
+                                        alt="Фото пример работы" 
+                                        class="img">
+                                </picture>
+                                <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="example__about">
                                 <h3 class="example__title">Ресторан Seafood</h3>
@@ -86,8 +161,33 @@
                         </li>
                         <li class="example__item">
                             <div class="example__cover-wrap">
-                            <img src="images/rabota4.jpg" alt="Фото пример работы" width="370">
-                            <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это  позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/des4-1x.jpg 1x,
+                                    ./images/portfolio/des4-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/tab4-1x.jpg 1x,
+                                    ./images/portfolio/tab4-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/mob4-1x.jpg 1x,
+                                    ./images/portfolio/mob4-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 320px)"
+                                    />
+                                    <img src="images/portfolio/des4-1x.jpg"
+                                        alt="Фото пример работы" 
+                                        class="img">
+                                </picture>
+                                <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это  позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="example__about">
                                 <h3 class="example__title">Проект Prime</h3>
@@ -96,8 +196,33 @@
                         </li>
                         <li class="example__item">
                             <div class="example__cover-wrap">
-                            <img src="images/rabota5.jpg" alt="Фото пример работы" width="370">
-                            <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это   позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/des5-1x.jpg 1x,
+                                    ./images/portfolio/des5-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/tab5-1x.jpg 1x,
+                                    ./images/portfolio/tab5-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/mob5-1x.jpg 1x,
+                                    ./images/portfolio/mob5-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 320px)"
+                                    />
+                                    <img src="images/portfolio/des5-1x.jpg"
+                                        alt="Фото пример работы" 
+                                        class="img">
+                                </picture>
+                                <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это   позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="example__about">
                                 <h3 class="example__title">Проект Boxes</h3>
@@ -106,8 +231,33 @@
                         </li>
                         <li class="example__item">
                             <div class="example__cover-wrap">
-                            <img src="images/rabota6.jpg" alt="Фото пример работы" width="370">
-                            <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это   позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/des6-1x.jpg 1x,
+                                    ./images/portfolio/des6-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/tab6-1x.jpg 1x,
+                                    ./images/portfolio/tab6-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/mob6-1x.jpg 1x,
+                                    ./images/portfolio/mob6-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 320px)"
+                                    />
+                                    <img src="images/portfolio/des6-1x.jpg"
+                                        alt="Фото пример работы" 
+                                        class="img">
+                                </picture>
+                                <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это   позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="example__about">
                                 <h3 class="example__title">Inspiration has no Borders</h3>
@@ -116,8 +266,33 @@
                         </li>
                         <li class="example__item">
                             <div class="example__cover-wrap">
-                            <img src="images/rabota7.jpg" alt="Фото пример работы" width="370">
-                            <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это   позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/des7-1x.jpg 1x,
+                                    ./images/portfolio/des7-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/tab7-1x.jpg 1x,
+                                    ./images/portfolio/tab7-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/mob7-1x.jpg 1x,
+                                    ./images/portfolio/mob7-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 320px)"
+                                    />
+                                    <img src="images/portfolio/des7-1x.jpg"
+                                        alt="Фото пример работы" 
+                                        class="img">
+                                </picture>
+                                <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это   позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="example__about">
                                 <h3 class="example__title">Издание Limited Edition</h3>
@@ -126,8 +301,33 @@
                         </li>
                         <li class="example__item">
                             <div class="example__cover-wrap">
-                            <img src="images/rabota8.jpg" alt="Фото пример работы" width="370">
-                            <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это  позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/des8-1x.jpg 1x,
+                                    ./images/portfolio/des8-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/tab8-1x.jpg 1x,
+                                    ./images/portfolio/tab8-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/mob8-1x.jpg 1x,
+                                    ./images/portfolio/mob8-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 320px)"
+                                    />
+                                    <img src="images/portfolio/des8-1x.jpg"
+                                        alt="Фото пример работы" 
+                                        class="img">
+                                </picture>
+                                <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это  позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="example__about">
                                 <h3 class="example__title">Проект LAB</h3>
@@ -136,8 +336,33 @@
                         </li>
                         <li class="example__item">
                             <div class="example__cover-wrap">
-                            <img src="images/rabota9.jpg" alt="Фото пример работы" width="370">
-                            <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/des9-1x.jpg 1x,
+                                    ./images/portfolio/des9-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/tab9-1x.jpg 1x,
+                                    ./images/portfolio/tab9-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/portfolio/mob9-1x.jpg 1x,
+                                    ./images/portfolio/mob9-2x.jpg 2x
+                                    " 
+                                    media="(min-width: 320px)"
+                                    />
+                                    <img src="images/portfolio/des9-1x.jpg"
+                                        alt="Фото пример работы" 
+                                        class="img">
+                                </picture>
+                                <p class="example__cover-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                             </div>
                             <div class="example__about">
                                 <h3 class="example__title">Growing Business</h3>
@@ -149,7 +374,7 @@
             </div>
         </section>
         </main>
-        <footer class="footer">
+        <!-- <footer class="footer">
         <div class="footer-container container">
             <div>
                 <a class="logo link" href="./index.html">Web<span class="footer-logo">Studio</span></a>
@@ -216,6 +441,6 @@
                 </label>
             </form>
         </div>
-        </footer>
+        </footer> -->
     </body>
 </html>
