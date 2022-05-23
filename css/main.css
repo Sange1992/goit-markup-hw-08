@@ -328,6 +328,92 @@ body {
   color: #ffffff;
 }
 
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 3;
+}
+.mob-menu__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: inherit;
+  margin-left: auto;
+}
+.mob-menu__close:focus .mob-menu__icon-close {
+  fill: var(--accent-color);
+}
+.mob-menu__nav-lis {
+  margin-bottom: -32px;
+}
+.mob-menu__nav-item {
+  margin-bottom: 32px;
+}
+.mob-menu__nav-link {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mob-menu__nav-link:focus {
+  color: var(--accent-color);
+}
+.mob-menu__contact-list {
+  margin-bottom: 32px;
+}
+.mob-menu__contacts-item {
+  margin-bottom: 32px;
+}
+.mob-menu__contacts-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mob-menu__contacts-link:focus {
+  color: var(--accent-color);
+}
+.mob-menu__soc-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.mob-menu__soc-item {
+  height: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.mob-menu__soc-item:not(last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.mob-menu__soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
 header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,6 +525,24 @@ header .container {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
+}
+
+.mob-menu__open {
+  display: block;
+  margin-left: auto;
+  background-color: inherit;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu__open {
+    display: none;
+  }
+}
+
+.mob-menu__icon {
+  fill: #212121;
+}
+.mob-menu__open:focus .mob-menu__icon {
+  fill: var(--accent-color);
 }
 
 .hero {

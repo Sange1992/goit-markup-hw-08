@@ -97,3 +97,17 @@ header .container {
     border-radius: 2px;
     background-color: var(--accent-color);
 }
+.mob-menu__open{
+    display: block;
+    margin-left: auto;
+    background-color: inherit;
+    @include tablet{
+        display: none;
+    }
+}
+.mob-menu__icon{
+    fill: #212121;
+    .mob-menu__open:focus & {
+        fill: var(--accent-color);
+    }
+}
