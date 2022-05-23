@@ -3,12 +3,27 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
+    width: 95%;
     height: 581px;
     padding: 40px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 5px;
     transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: scroll;
+    @include mobile {
+        max-width: 450px;
+        max-height: 609px 
+    }
+    @include desktop {
+        width: 528px;
+        height: 581px; 
+    }
+    @media (orientation: landscape) {
+        top: 10px;
+        transform: translate(-50%,);
+        overflow: scroll;
+        
+    }
 }
 
 .close-modal {
