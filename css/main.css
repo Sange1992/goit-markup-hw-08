@@ -103,8 +103,6 @@ body {
 }
 
 .logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -452,6 +450,11 @@ header .container {
 
 .header-logo {
   color: #000000;
+}
+
+.logo-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .nav {
@@ -1060,6 +1063,9 @@ header .container {
 @media screen and (min-width: 1200px) {
   .container-soc {
     margin-right: 93px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 .container-soc__title {
@@ -1130,6 +1136,7 @@ header .container {
   text-align: center;
   width: 100%;
   margin-bottom: 20px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;

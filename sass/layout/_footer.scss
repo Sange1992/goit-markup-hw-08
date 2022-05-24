@@ -75,6 +75,7 @@
     }
     @include desktop{
         margin-right: 93px;
+        align-items: flex-start;
     }
     &__title {
         font-weight: 700;
@@ -125,6 +126,7 @@
         text-align: center;
         width: 100%;
         margin-bottom: 20px;
+        font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
