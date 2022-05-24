@@ -1229,13 +1229,19 @@ header .container {
   margin-left: 10px;
 }
 
-.portfolio--border {
+.portfolio-border {
   border-bottom: 1px solid #ECECEC;
 }
 
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .portfolio__buttons {
   display: -webkit-box;
@@ -1280,6 +1286,11 @@ header .container {
 
 .example {
   margin-top: 40px;
+}
+@media screen and (min-width: 1200px) {
+  .example {
+    margin-top: 50px;
+  }
 }
 .example__list {
   display: -webkit-box;

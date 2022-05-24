@@ -1,11 +1,15 @@
-.portfolio--border {
+.portfolio-border {
     border-bottom: 1px solid #ECECEC;
 }
 .portfolio {
     padding-top: 60px;
     padding-bottom: 60px;
-    // padding-top: 94px;
-    // padding-bottom: 94px;
+    @include desktop{
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+    }
+    
     &__buttons {
         display: flex;
         flex-wrap: wrap;
@@ -41,6 +45,10 @@
 }
 .example{
     margin-top: 40px;
+    @include desktop{
+        margin-top: 50px;
+
+    }
     &__list {
         display: flex;
         flex-wrap: wrap;
