@@ -14,7 +14,6 @@
     &__item {
         width: auto;
         margin-bottom: 30px;
-      
         @include tablet{
             margin-right: 30px;
             flex-basis: calc(100% / 2 - 30px);
@@ -24,7 +23,6 @@
             flex-basis: calc(100% / 4 - 30px);
         }
     }
-   
 
     &__icon {
         height: 120px;
@@ -36,6 +34,7 @@
         margin-bottom: 30px;
     }
     &__title {
+        text-align: center;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -44,6 +43,10 @@
         letter-spacing: 0.03em;
         color: #212121;
         margin-bottom: 10px;
+        @include tablet {
+            text-align: start;
+
+        }
     }
     &__text {
         font-weight: 400;
