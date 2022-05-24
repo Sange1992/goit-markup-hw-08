@@ -128,7 +128,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 95%;
+  width: 95vw;
   height: 581px;
   padding: 40px;
   background-color: rgb(255, 255, 255);
@@ -141,8 +141,8 @@ body {
 }
 @media screen and (min-width: 480px) {
   .modal {
-    max-width: 450px;
-    max-height: 609px;
+    width: 450px;
+    height: 609px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -290,8 +290,8 @@ body {
 .modal__checkbox {
   display: inline-block;
   position: relative;
-  padding-left: 30px;
-  height: 24px;
+  padding-left: 20px;
+  height: 20px;
   margin-bottom: 30px;
   font-size: 12px;
   line-height: 1.67;
@@ -302,24 +302,31 @@ body {
   .modal__checkbox {
     font-size: 14px;
     line-height: 1.71;
+    padding-left: 30px;
   }
 }
 .modal__agreement {
   width: 20px;
 }
 .modal__agreement-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.67;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;
 }
+@media screen and (min-width: 1200px) {
+  .modal__agreement-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 .modal__check-box {
   position: absolute;
   display: block;
   top: 50%;
-  left: 8px;
+  left: 0px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 16px;
@@ -328,6 +335,11 @@ body {
   background-image: url(../images/check-off.svg);
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1200px) {
+  .modal__check-box {
+    left: 8px;
+  }
 }
 .modal__agreement:checked ~ .modal__check-box {
   background-image: url(../images/check-on.svg);

@@ -65,8 +65,8 @@
     &__checkbox {
         display: inline-block;
         position: relative;
-        padding-left: 30px;
-        height: 24px;
+        padding-left: 20px;
+        height: 20px;
         margin-bottom: 30px;
         font-size: 12px;
         line-height: 1.67;
@@ -75,24 +75,29 @@
         @include desktop{
             font-size: 14px;
             line-height: 1.71;
-    
+            padding-left: 30px;
         }
     }
     &__agreement {
         width: 20px;
     }
     &__agreement-link {
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.67;
         letter-spacing: 0.03em;
         text-decoration-line: underline;
         color: #2196F3;
+        @include desktop{
+            font-size: 14px;
+            line-height: 1.71;
+        }
+
     }
     &__check-box {
         position: absolute;
         display: block;
         top: 50%;
-        left: 8px;
+        left: 0px;
         transform: translateY(-50%);
         width: 16px;
         height: 15px;
@@ -100,6 +105,9 @@
         background-image: url(../images/check-off.svg);
         background-size: contain;
         background-repeat: no-repeat;
+        @include desktop{
+            left: 8px;
+        }
     }
     &__agreement:checked~&__check-box {
         background-image: url(../images/check-on.svg);
